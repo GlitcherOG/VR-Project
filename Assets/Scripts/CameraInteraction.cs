@@ -18,6 +18,7 @@ public class CameraInteraction : MonoBehaviour
                 if (Current != null)
                 {
                     Current.HitDisabled();
+                    Current = null;
                 }
             }
             else
@@ -27,9 +28,18 @@ public class CameraInteraction : MonoBehaviour
                     if (Current != null)
                     {
                         Current.HitDisabled();
-                    }                    Current = New;
+                    }                    
+                    Current = New;
                     Current.HitActive();
                 }
+            }
+        }
+        else
+        {
+            if (Current != null)
+            {
+                Current.HitDisabled();
+                Current = null;
             }
         }
     }

@@ -6,7 +6,7 @@ public class FollowBehaviour : MonoBehaviour
     private Transform target;
     
     [SerializeField,Tooltip("The amount of space between the user and animal.")] 
-    private float stopDistance;
+    private float goToPlayerDistance;
 
     private Rigidbody rb;
     
@@ -22,7 +22,7 @@ public class FollowBehaviour : MonoBehaviour
     void Update()
     {
         //If distance between AI & user is greater than stop distance = stop in front of user
-        if (Vector3.Distance(transform.position, target.position) > stopDistance)
+        if (Vector3.Distance(transform.position, target.position) > goToPlayerDistance)
         {
             rb.constraints = RigidbodyConstraints.FreezeAll;
         }
@@ -44,6 +44,6 @@ public class FollowBehaviour : MonoBehaviour
     private void OnDrawGizmos() 
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, stopDistance);
+        Gizmos.DrawWireSphere(transform.position, goToPlayerDistance);
     }
 }

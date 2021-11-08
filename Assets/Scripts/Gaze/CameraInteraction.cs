@@ -31,7 +31,6 @@ public class CameraInteraction : MonoBehaviour
     {
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100.0f))
         {
-            canvas.SetActive(true);
             newInteraction = hit.transform.GetComponent<InteractionManager>();
             if (newInteraction == null)
             {
@@ -44,6 +43,7 @@ public class CameraInteraction : MonoBehaviour
             }
             else
             {
+                canvas.SetActive(true);
                 if (currentInteraction != newInteraction)
                 {
                     if (currentInteraction != null)

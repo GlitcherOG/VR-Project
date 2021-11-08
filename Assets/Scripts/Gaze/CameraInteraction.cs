@@ -7,9 +7,10 @@ public class CameraInteraction : MonoBehaviour
 {
     public static CameraInteraction instance;
     public GameObject canvas;
-    public Slider slider;
+    public Image slider;
+    public InteractionManager oldInteraction;
     public InteractionManager currentInteraction;
-    public InteractionManager newInteraction;
+    private InteractionManager newInteraction;
     public RaycastHit hit;
     Camera cam;
 
@@ -24,10 +25,10 @@ public class CameraInteraction : MonoBehaviour
     private void Start()
     {
         cam = Camera.main;
+        canvas.SetActive(false);
     }
     void Update()
     {
-
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100.0f))
         {
             canvas.SetActive(true);
@@ -38,6 +39,7 @@ public class CameraInteraction : MonoBehaviour
                 {
                     currentInteraction.HitDisabled();
                     currentInteraction = null;
+                    newInteraction = null;
                 }
             }
             else
@@ -49,21 +51,25 @@ public class CameraInteraction : MonoBehaviour
                         currentInteraction.HitDisabled();
                     }
                     currentInteraction = newInteraction;
+                    oldInteraction = currentInteraction;
                     currentInteraction.HitActive();
-                }
-                else
-                {
-                    slider.value = currentInteraction.count / currentInteraction.Maxseconds;
                 }
             }
         }
         else
         {
-            canvas.SetActive(false);
             if (currentInteraction != null)
             {
                 currentInteraction.HitDisabled();
                 currentInteraction = null;
+            }
+        }
+        if (oldInteraction != null)
+        {
+            slider.fillAmount = (oldInteraction.count / oldInteraction.Maxseconds);
+            if (oldInteraction.count <= 0)
+            {
+                canvas.SetActive(false);
             }
         }
     }

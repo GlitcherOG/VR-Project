@@ -12,6 +12,11 @@ public class GazeTeleport : MonoBehaviour
   public MeshCollider col;
   public MeshRenderer rend;
 
+  private void OnDrawGizmos()
+  {
+    BT.BaneGizmos.DrawArrow(teleportPoint.position, teleportPoint.forward);
+  }
+
   private void Awake()
   {
     col = GetComponent<MeshCollider>();
@@ -23,21 +28,18 @@ public class GazeTeleport : MonoBehaviour
     if (!isEnabled) return;
 
     rig.position = teleportPoint.position;
+    rig.rotation = teleportPoint.rotation;
+
+    Transform cam = Camera.main.transform;
+    cam.localEulerAngles = new Vector3(cam.localRotation.x, 0, cam.localRotation.z); // Resets rotation relative to rig
   }
 
-  private void OnTriggerEnter(Collider other)
-  {
-    SetEnabled(false);
-  }
-
-  private void OnTriggerExit(Collider other)
-  {
-    SetEnabled(true);
-  }
-
+  private void OnTriggerEnter(Collider other) => SetEnabled(false);
+ 
+  private void OnTriggerExit(Collider other) => SetEnabled(true);
+ 
   public void SetEnabled(bool _state)
   {
-    print($"I am changing to {_state}!");
     isEnabled = _state;
 
     col.enabled = _state; 

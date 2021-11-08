@@ -7,10 +7,17 @@ public class CameraInteraction : MonoBehaviour
     public InteractionManager Current;
     public InteractionManager New;
     public RaycastHit hit;
-    void Update()
+
+  Camera cam;
+
+  private void Start()
+  {
+    cam = Camera.main;
+  }
+  void Update()
     {
         
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 100.0f))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100.0f))
         {
             New = hit.transform.GetComponent<InteractionManager>();
             if (New == null)

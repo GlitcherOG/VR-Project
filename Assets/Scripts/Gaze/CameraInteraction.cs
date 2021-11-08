@@ -1,52 +1,69 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraInteraction : MonoBehaviour
 {
-    public InteractionManager Current;
-    public InteractionManager New;
+    public static CameraInteraction instance;
+    public GameObject canvas;
+    public Slider slider;
+    public InteractionManager currentInteraction;
+    public InteractionManager newInteraction;
     public RaycastHit hit;
+    Camera cam;
 
-  Camera cam;
-
-  private void Start()
-  {
-    cam = Camera.main;
-  }
-  void Update()
+    private void Awake()
     {
-        
+        if(instance==null)
+        {
+            instance = this;
+        }
+    }
+
+    private void Start()
+    {
+        cam = Camera.main;
+    }
+    void Update()
+    {
+
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100.0f))
         {
-            New = hit.transform.GetComponent<InteractionManager>();
-            if (New == null)
+            canvas.SetActive(true);
+            newInteraction = hit.transform.GetComponent<InteractionManager>();
+            if (newInteraction == null)
             {
-                if (Current != null)
+                if (currentInteraction != null)
                 {
-                    Current.HitDisabled();
-                    Current = null;
+                    currentInteraction.HitDisabled();
+                    currentInteraction = null;
                 }
             }
             else
             {
-                if (Current != New)
+                if (currentInteraction != newInteraction)
                 {
-                    if (Current != null)
+                    if (currentInteraction != null)
                     {
-                        Current.HitDisabled();
-                    }                    
-                    Current = New;
-                    Current.HitActive();
+                        currentInteraction.HitDisabled();
+                    }
+                    currentInteraction = newInteraction;
+                    currentInteraction.HitActive();
+                }
+                else
+                {
+                    slider.value = currentInteraction.count / currentInteraction.Maxseconds;
                 }
             }
         }
         else
         {
-            if (Current != null)
+            canvas.SetActive(false);
+            if (currentInteraction != null)
             {
-                Current.HitDisabled();
-                Current = null;
+                currentInteraction.HitDisabled();
+                currentInteraction = null;
             }
         }
     }

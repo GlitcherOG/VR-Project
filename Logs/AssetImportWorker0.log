@@ -1,0 +1,195 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.2f1 (068178b99f32) revision 426360'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 65466 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Users\ryana\Documents\Unity Games\2020.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ryana/Documents/GitHub/VR-Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54962
+Successfully changed project path to: C:/Users/ryana/Documents/GitHub/VR-Project
+C:/Users/ryana/Documents/GitHub/VR-Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 95.22 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 1.45 ms.
+Initialize engine version: 2020.2.2f1 (068178b99f32)
+[Subsystems] Discovering subsystems at path C:/Users/ryana/Documents/Unity Games/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ryana/Documents/GitHub/VR-Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   
+    VRAM:     8079 MB
+    Driver:   30.0.14.9613
+Initialize mono
+Mono path[0] = 'C:/Users/ryana/Documents/Unity Games/2020.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/ryana/Documents/Unity Games/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/ryana/Documents/Unity Games/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/ryana/Documents/Unity Games/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Users/ryana/Documents/Unity Games/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Users/ryana/Documents/Unity Games/2020.2.2f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.002448 seconds.
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 89.26 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.12 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.664 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009001 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\ryana\Documents\GitHub\VR-Project\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\ryana\Documents\GitHub\VR-Project\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.10.0/Runtime/OculusLoader.cs Line: 250)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.983 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.71 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+Unloading 2103 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 101.5 MB.
+System memory in use after: 101.5 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2534.
+Total: 2.140800 ms (FindLiveObjects: 0.186400 ms CreateObjectMapping: 0.070200 ms MarkObjects: 1.824200 ms  DeleteObjects: 0.059300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6e520b92ccfc61bcfa21a7bcab8468') in 0.007925 seconds
+  Import took 0.011379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.191367 seconds.
+  path: Assets/Ryans Models
+  artifactKey: Guid(91e658bf1d6de8b4a9bd0c33ccf2fd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models using Guid(91e658bf1d6de8b4a9bd0c33ccf2fd65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a95332c27a238daaeb0c6705747047') in 0.006361 seconds
+  Import took 0.010320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.898829 seconds.
+  path: Assets/Ryans Models/Umbrella.fbx
+  artifactKey: Guid(ee81f0f6f37cb3e43aeaefed841a4145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Umbrella.fbx using Guid(ee81f0f6f37cb3e43aeaefed841a4145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1426a580478064c4582a6ad7368eb7') in 0.323140 seconds
+  Import took 0.326680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.808845 seconds.
+  path: Assets/Ryans Models/Models
+  artifactKey: Guid(2c40ba4ff6226f14ba3af71fada8c500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Models using Guid(2c40ba4ff6226f14ba3af71fada8c500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c6e4949d4dd990aa40c88e67aedd7f') in 0.006008 seconds
+  Import took 0.009601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.501883 seconds.
+  path: Assets/Ryans Models/Textures
+  artifactKey: Guid(ef4ecde34faf7924aad80aa6d5a71710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures using Guid(ef4ecde34faf7924aad80aa6d5a71710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7ce1b430d3f4fdcd274e90edb5396c') in 0.004799 seconds
+  Import took 0.008166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.482816 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures
+  artifactKey: Guid(457ffcfcee2339a43a96e851fa079fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures using Guid(457ffcfcee2339a43a96e851fa079fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa86812e9ae2311cf807a173b856fcd') in 0.005201 seconds
+  Import took 0.008812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000550 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures
+  artifactKey: Guid(457ffcfcee2339a43a96e851fa079fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures using Guid(457ffcfcee2339a43a96e851fa079fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa86812e9ae2311cf807a173b856fcd') in 0.002034 seconds
+  Import took 0.005157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019283 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures/lambert1_Base_color.png
+  artifactKey: Guid(aefca3acaaf9b0749a90224dcec38f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures/lambert1_Base_color.png using Guid(aefca3acaaf9b0749a90224dcec38f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2245792c120417bc1ac224094599907d') in 0.055940 seconds
+  Import took 0.059356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures/lambert1_Normal_OpenGL.png
+  artifactKey: Guid(686d7d87b636d924983864664819307a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures/lambert1_Normal_OpenGL.png using Guid(686d7d87b636d924983864664819307a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87534888214e2d5cd8325944dbae19cf') in 0.008795 seconds
+  Import took 0.012143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures/lambert1_Height.png
+  artifactKey: Guid(5bb047876c9372c469aa93b4103dbad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures/lambert1_Height.png using Guid(5bb047876c9372c469aa93b4103dbad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd867905a3bfd14beff626a4f0c42475f') in 0.008862 seconds
+  Import took 0.012147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures/lambert1_Roughness.png
+  artifactKey: Guid(ae27178d555312745a6816f747f24e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures/lambert1_Roughness.png using Guid(ae27178d555312745a6816f747f24e76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77550633feac483490b4895cb368ee4d') in 0.010163 seconds
+  Import took 0.013985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures/lambert1_Normal.png
+  artifactKey: Guid(1474f278567f21640a22079d840ef9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures/lambert1_Normal.png using Guid(1474f278567f21640a22079d840ef9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96219b1fb9542df9af5eb470c60bfbe7') in 0.009343 seconds
+  Import took 0.013123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Ryans Models/Textures/Umbrella textures/lambert1_Metallic.png
+  artifactKey: Guid(e26d98873a970984ba63698da4a74900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ryans Models/Textures/Umbrella textures/lambert1_Metallic.png using Guid(e26d98873a970984ba63698da4a74900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef5ce5072cc060164592ff1f6b9fd0c') in 0.010699 seconds
+  Import took 0.014420 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

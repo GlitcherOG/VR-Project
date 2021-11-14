@@ -36,6 +36,7 @@ public class FollowBehaviour : MonoBehaviour
     {
         //Follow user
         transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        //transform.LookAt(target);
     }
 
     /// <summary>

@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestLara.unity
     guid: df7466d7d083b8646a403f9c88958839
+  - enabled: 1
+    path: Assets/Scenes/Jordy Test Scene.unity
+    guid: b5c9a76f6a2a163468ed1255bf8800b9
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

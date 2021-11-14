@@ -1,20 +1,32 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class OptionsManager : MonoBehaviour
+public class Options : MonoBehaviour
 {
+    #region UI Elements
     public Toggle muteToggle;
     public AudioMixer masterAudio;
     public Slider musicSlider;
     public Slider SFXSlider;
+    #endregion
 
-    // Update is called once per frame
-    void Update()
+   
+
+    // Start is called before the first frame update
+    void Start()
     {
         LoadPlayerPrefs();
     }
     
+    #region Change Settings
+    public void ChangeScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
+
     //This changes volume in options
     public void SetMusicVolume(float MusicVol)
     {
@@ -32,16 +44,18 @@ public class OptionsManager : MonoBehaviour
         //string reference isMuted connects to the AudioMixer master group Volume and isMuted parameters in Unity
         if (isMuted)
         {
-            //-80 is the minimum volume
-            masterAudio.SetFloat("isMutedVolume", -80);
+            //-40 is the minimum volume
+            masterAudio.SetFloat("isMutedVolume", -40);
         }
         else
         {
-            //20 is the maximum volume
-            masterAudio.SetFloat("isMutedVolume", 20);
+            //0 is the maximum volume
+            masterAudio.SetFloat("isMutedVolume", 0);
         }
     }
-    
+    #endregion
+
+    #region Save Prefs
     public void SavePlayerPrefs()
     {
         //save audio sliders
@@ -58,7 +72,9 @@ public class OptionsManager : MonoBehaviour
 
         PlayerPrefs.Save();
     }
-    
+    #endregion
+
+    #region Load Prefs
     public void LoadPlayerPrefs()
     {
         //load audio Sliders
@@ -75,4 +91,6 @@ public class OptionsManager : MonoBehaviour
             masterAudio.SetFloat("SFXVol", SFXVol);
         }
     }
+    #endregion
 }
+

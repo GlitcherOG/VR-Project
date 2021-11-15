@@ -5,11 +5,13 @@ public class AnimalAnimationController : MonoBehaviour
 {
     public float moveSpeed;
     private Transform target;
+    private float turnSmoothVelocity;
+    public float turnSpeed;
     
     [SerializeField,Tooltip("The amount of space between the user and animal.")] 
     private float goToPlayerDistance;
 
-    private Rigidbody rb;
+    //private Rigidbody rb;
     private Animator deerAnimator;
 
     [Header("Deer Patrol State")]
@@ -24,16 +26,23 @@ public class AnimalAnimationController : MonoBehaviour
         waitTime = startWaitTime;
         
         deerAnimator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
+        
         //Find the player in the scene by tag
         target = GameObject.FindGameObjectWithTag("Target").transform;
 
+        //Set up the random points for the deer to walk to
         randomSpot = Random.Range(0, patrolSpots.Length);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Smooth rotation between walk points
+        float targetAngle = Mathf.Atan2(patrolSpots[randomSpot].transform.position.x - transform.position.x, patrolSpots[randomSpot].transform.position.z - transform.position.z) * Mathf.Rad2Deg;
+        float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSpeed);
+        transform.rotation = Quaternion.Euler(0f, angle, 0f);
+        
+        //Interact with player
         bool interactPlayer = Vector3.Distance(transform.position, target.position) < goToPlayerDistance;
         
         //If the distance between target and animal is in range, then walk toward the player
@@ -44,19 +53,19 @@ public class AnimalAnimationController : MonoBehaviour
             
             //Follow user
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            
+            //If the deer is already at the target position then go to Idle
+            if(Vector3.Distance(transform.position, target.position) == 0)
+            {
+                //Set IsWalking bool to false to make the deer idle
+                deerAnimator.SetBool("IsWalking", false);
+            }
         }
         
         //If not in range of player, patrol
         if(!interactPlayer)
         {
             Patrol();
-        }
-        
-        //If the deer is already at the target position then go to Idle
-        if(Vector3.Distance(transform.position, target.position) == 0)
-        {
-            //Set IsWalking bool to false to make the deer idle
-            deerAnimator.SetBool("IsWalking", false);
         }
     }
 
@@ -76,57 +85,25 @@ public class AnimalAnimationController : MonoBehaviour
         //If deer has moved to a random spot, eating animation/wait a few seconds
         if (Vector3.Distance(transform.position, patrolSpots[randomSpot].position) < 0.2f)
         {
-            StartCoroutine(EatAnimation());
-            
-            /*//If wait time has passed
+            //If wait time has passed
             if (waitTime <= 0)
             {
                 //Walk animation between points
                 deerAnimator.SetBool("IsWalking", true);
-                
+
                 //Move to another point
                 randomSpot = Random.Range(0, patrolSpots.Length);
+                
                 waitTime = startWaitTime;
             }
             else
             {
-                //Eat animation
-                deerAnimator.SetBool("IsEating", true);
-                
                 //Make deer idle
                 deerAnimator.SetBool("IsWalking", false);
-                
+
                 //Decrease countdown
                 waitTime -= Time.deltaTime;
-            }*/
+            }
         }
-    }
-
-    private IEnumerator EatAnimation()
-    {
-        //If wait time has passed
-        if (waitTime <= 0)
-        {
-            //Walk animation between points
-            deerAnimator.SetBool("IsWalking", true);
-                
-            //Move to a random point in the array
-            randomSpot = Random.Range(0, patrolSpots.Length);
-            waitTime = startWaitTime;
-        }
-        else
-        {
-            //Make deer idle
-            deerAnimator.SetBool("IsWalking", false);
-            
-            //Eat animation
-            deerAnimator.SetBool("IsEating", true);
-            
-            //Make deer eat until wait time 
-            yield return new WaitForSeconds(waitTime);
-            
-            //Decrease countdown
-            waitTime -= Time.deltaTime;
-        }   
     }
 }

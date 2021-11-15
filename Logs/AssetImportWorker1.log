@@ -2011,3 +2011,325 @@ System memory in use after: 113.0 MB.
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2889.
 Total: 2.702500 ms (FindLiveObjects: 0.250000 ms CreateObjectMapping: 0.096600 ms MarkObjects: 2.335200 ms  DeleteObjects: 0.019800 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012246 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.05 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.19 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.10.0/Runtime/OculusLoader.cs Line: 250)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.486 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.03 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.9 MB.
+System memory in use after: 113.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2892.
+Total: 3.319400 ms (FindLiveObjects: 0.349300 ms CreateObjectMapping: 0.126200 ms MarkObjects: 2.819800 ms  DeleteObjects: 0.021900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011505 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.32 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.18 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.10.0/Runtime/OculusLoader.cs Line: 250)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.433 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.49 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.9 MB.
+System memory in use after: 113.1 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2895.
+Total: 3.827100 ms (FindLiveObjects: 0.330000 ms CreateObjectMapping: 0.137000 ms MarkObjects: 3.328400 ms  DeleteObjects: 0.029300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 254.283909 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Buildings_T/airport-hangar.fbx
+  artifactKey: Guid(739a0f4d3fcd15543b188a24fbf152db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Buildings_T/airport-hangar.fbx using Guid(739a0f4d3fcd15543b188a24fbf152db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f0acf043c9aaee85d9d79a08a1976c') in 0.236167 seconds
+  Import took 0.244291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Vehicles_M/boat-china.fbx
+  artifactKey: Guid(ae2c00b132c517242aa4d06c10625921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Vehicles_M/boat-china.fbx using Guid(ae2c00b132c517242aa4d06c10625921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403082137aa0595ecf85723b28684f67') in 0.050147 seconds
+  Import took 0.054682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/boy-shirt.fbx
+  artifactKey: Guid(3dc8ea7dae5403f47be3d1c392688fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/boy-shirt.fbx using Guid(3dc8ea7dae5403f47be3d1c392688fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3e6d0002be9ae9706f546c8ebdcc6e') in 0.043359 seconds
+  Import took 0.048151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Beach_T/beach-bag.fbx
+  artifactKey: Guid(27417e8aa917d4da0a4ae1c83ef22b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Beach_T/beach-bag.fbx using Guid(27417e8aa917d4da0a4ae1c83ef22b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36be375386cf8e55be9bd5018395f43') in 0.050161 seconds
+  Import took 0.055545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/boy-beach.fbx
+  artifactKey: Guid(23367faf584984558a48df6bc60df89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/boy-beach.fbx using Guid(23367faf584984558a48df6bc60df89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8146e1ee7066648c6733accea49e98dd') in 0.039480 seconds
+  Import took 0.044870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Vehicles_T/boat-china.fbx
+  artifactKey: Guid(61102e40f664bbe45a854db4eb547566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Vehicles_T/boat-china.fbx using Guid(61102e40f664bbe45a854db4eb547566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540ac89846d10bbc9e1ac24945e91f2b') in 0.038897 seconds
+  Import took 0.045221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/boy-shirt.fbx
+  artifactKey: Guid(75ac5f529a1cb4a4da9707df3f69c03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/boy-shirt.fbx using Guid(75ac5f529a1cb4a4da9707df3f69c03c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c887c222a68369844c7de61d81131613') in 0.035974 seconds
+  Import took 0.040270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Furniture_T/bath.fbx
+  artifactKey: Guid(b491d524a33f7481c99ffa2d25e43b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Furniture_T/bath.fbx using Guid(b491d524a33f7481c99ffa2d25e43b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023b7d2b1d269fb9df20d7332cb1181f') in 0.041679 seconds
+  Import took 0.046503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Furniture_M/bin-wheelie.fbx
+  artifactKey: Guid(31d5e280b2be14476a54ba94d25f9163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Furniture_M/bin-wheelie.fbx using Guid(31d5e280b2be14476a54ba94d25f9163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c02279d9cfd9505e59940b96ae6f97') in 0.043719 seconds
+  Import took 0.048928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Buildings_T/blockhouse-general-major.fbx
+  artifactKey: Guid(fe264dd7e211728499f7c1af4c6bb4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Buildings_T/blockhouse-general-major.fbx using Guid(fe264dd7e211728499f7c1af4c6bb4a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e25b28d9c199914ee9b86d4eeba980') in 0.050512 seconds
+  Import took 0.055577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-beach_Rig.fbx
+  artifactKey: Guid(21fc0b67a1f22604b99132fd973dd725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-beach_Rig.fbx using Guid(21fc0b67a1f22604b99132fd973dd725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c416fa91f3681bf06a2f6077c42e99') in 0.058765 seconds
+  Import took 0.062957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Scifi_M/belt-moving-straight.fbx
+  artifactKey: Guid(b4c3a245c064ede4bae54af40decdd06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Scifi_M/belt-moving-straight.fbx using Guid(b4c3a245c064ede4bae54af40decdd06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b1f2eb91c0cae4dffda1a71da3f10bc') in 0.047456 seconds
+  Import took 0.051491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Props_T/bin-wheelie.fbx
+  artifactKey: Guid(78f5d1f9e10824e33bd22ad4d0e7faa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Props_T/bin-wheelie.fbx using Guid(78f5d1f9e10824e33bd22ad4d0e7faa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34882c41f15cee89a52b8bdceefc52f3') in 0.044538 seconds
+  Import took 0.048987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/blockhouse-general-major.fbx
+  artifactKey: Guid(b4a06ef930a7fa944a642663ea1a80d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/blockhouse-general-major.fbx using Guid(b4a06ef930a7fa944a642663ea1a80d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11a6757a027278f3826cdc1579ebb21') in 0.059052 seconds
+  Import took 0.063162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/boy-beach.fbx
+  artifactKey: Guid(28156f5d13e454e3982fe9f63679307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/boy-beach.fbx using Guid(28156f5d13e454e3982fe9f63679307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a38d9cb626003c5bcca6f2d05ac572') in 0.031822 seconds
+  Import took 0.035955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Scifi_T/belt-moving-straight.fbx
+  artifactKey: Guid(19f88a230b779cc42a51663545251b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Scifi_T/belt-moving-straight.fbx using Guid(19f88a230b779cc42a51663545251b91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8d9065b8438338364fb054f93a8ae4') in 0.041261 seconds
+  Import took 0.046420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Props_T/bench-forest.fbx
+  artifactKey: Guid(bd675b82ff38c48168125c082d33143c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Props_T/bench-forest.fbx using Guid(bd675b82ff38c48168125c082d33143c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171e947a0d645718829ae91421f4b58c') in 0.038336 seconds
+  Import took 0.042956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-beach_Rig.fbx
+  artifactKey: Guid(0d5ae11bf8e37bd41a33e2336a6dc774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/People_T/Rigs_T/boy-beach_Rig.fbx using Guid(0d5ae11bf8e37bd41a33e2336a6dc774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc75110373fc972b2e9ca274210e42f9') in 0.048349 seconds
+  Import took 0.052918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Vehicles_T/boat-fishing.fbx
+  artifactKey: Guid(7c80836f9315fc543871e6315f95fceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/T/- Meshes_T/Vehicles_T/boat-fishing.fbx using Guid(7c80836f9315fc543871e6315f95fceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc97a4c8bc0234db9a0bea939ee6251') in 0.054453 seconds
+  Import took 0.059223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Props_M/bench-forest.fbx
+  artifactKey: Guid(11dfff8abba575a4e8a882304979562f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Props_M/bench-forest.fbx using Guid(11dfff8abba575a4e8a882304979562f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80eb78f2b267a039604d208c112b4858') in 0.037639 seconds
+  Import took 0.042349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Vehicles_M/boat-fishing.fbx
+  artifactKey: Guid(5f305c0611af59342a39bc0b3c8129c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Vehicles_M/boat-fishing.fbx using Guid(5f305c0611af59342a39bc0b3c8129c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593d203a1e3fb1d2d4630080e1810272') in 0.034616 seconds
+  Import took 0.039274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-shirt_Rig.fbx
+  artifactKey: Guid(ddc2cd291350e1443981d0fb5c96b18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Packages/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/People_M/Rigs_M/boy-shirt_Rig.fbx using Guid(ddc2cd291350e1443981d0fb5c96b18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408ca43cc60344f1f0d041bdb7a98624') in 0.049202 seconds
+  Import took 0.054588 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012710 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.51 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.10.0/Runtime/OculusLoader.cs Line: 250)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.484 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.59 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 123.8 MB.
+System memory in use after: 124.1 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2903.
+Total: 3.214500 ms (FindLiveObjects: 0.651200 ms CreateObjectMapping: 0.187700 ms MarkObjects: 2.343900 ms  DeleteObjects: 0.030500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012083 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.10.0/Runtime/OculusLoader.cs Line: 250)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.439 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.47 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2906.
+Total: 2.776500 ms (FindLiveObjects: 0.306600 ms CreateObjectMapping: 0.156900 ms MarkObjects: 2.286700 ms  DeleteObjects: 0.024900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012006 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.14 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004c] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x000b0] in E:\OneDrive - TAFE NSW\VR GITHUB\VR-Project\CozyNookVR\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.10.0/Runtime/OculusLoader.cs Line: 250)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.466 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.61 ms, found 14 plugins.
+Preloading 2 native plugins for Editor in 0.25 ms.
+Unloading 2201 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.2 MB.
+System memory in use after: 124.4 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2909.
+Total: 4.659000 ms (FindLiveObjects: 0.387900 ms CreateObjectMapping: 0.123500 ms MarkObjects: 4.119600 ms  DeleteObjects: 0.026400 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

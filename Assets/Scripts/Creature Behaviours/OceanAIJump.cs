@@ -15,7 +15,9 @@ public class OceanAIJump : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))
+        {
             jump = true;
+        }
 
         if (jump.Equals(true))
             fishAnim.SetBool("IsJumping", true);

@@ -7,7 +7,19 @@ public class MainMenuManager : MonoBehaviour
 {
     public GameObject mainMenu, optionMenu;
 
-    
+    public static MainMenuManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

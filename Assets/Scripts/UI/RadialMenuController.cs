@@ -10,8 +10,6 @@ public class RadialMenuController : MonoBehaviour
     private bool isOpen; //Tracks if radial menu is open or not
     [SerializeField] private float buttonDistance; //Distance between parent radial button and children buttons
 
-   
-
     // Start is called before the first frame update
     void Start()
     {
@@ -63,5 +61,15 @@ public class RadialMenuController : MonoBehaviour
                 btn.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void OpenMainMenu()
+    {
+        MainMenuManager.instance.optionMenu.SetActive(true);
+    }
+
+    public void QuitButton()
+    {
+        MainMenuManager.instance.QuitGame();
     }
 }

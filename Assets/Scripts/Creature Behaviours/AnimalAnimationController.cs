@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class AnimalAnimationController : MonoBehaviour
 {
@@ -6,18 +7,19 @@ public class AnimalAnimationController : MonoBehaviour
     private Transform target;
     private float turnSmoothVelocity;
     public float turnSpeed;
+    private Rigidbody rb;
 
     [SerializeField, Tooltip("The amount of space between the user and animal.")]
     private float goToPlayerDistance;
 
     private Animator animalAnimator;
 
-    [Header("AI Patrol State")] public Transform[] patrolSpots;
+    [Header("AI Patrol State")] 
+    public Transform[] patrolSpots;
     private int randomSpot; //Choose a random position for the deer to go to
     private float waitTime;
     public float startWaitTime;
-
-    [Header("Turtle RB")] private Rigidbody rb;
+    private bool interactPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -25,27 +27,32 @@ public class AnimalAnimationController : MonoBehaviour
         waitTime = startWaitTime;
 
         animalAnimator = GetComponent<Animator>();
-
+        rb = GetComponent<Rigidbody>();
+        
         //Find the player in the scene by tag
         target = GameObject.FindGameObjectWithTag("Target").transform;
 
         //Set up the random points for the deer to walk to
         randomSpot = Random.Range(0, patrolSpots.Length);
-
-        rb = GetComponent<Rigidbody>();
+        
+        if (transform.position == patrolSpots[0].transform.position)
+        {
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         //Smooth rotation between walk points
-        float targetAngle = Mathf.Atan2(patrolSpots[randomSpot].transform.position.x - transform.position.x,
-            patrolSpots[randomSpot].transform.position.z - transform.position.z) * Mathf.Rad2Deg;
-        float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSpeed);
-        transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
+            float targetAngle = Mathf.Atan2(patrolSpots[randomSpot].transform.position.x - transform.position.x,
+                patrolSpots[randomSpot].transform.position.z - transform.position.z) * Mathf.Rad2Deg;
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSpeed);
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+        
+        
         //Interact with player
-        bool interactPlayer = Vector3.Distance(transform.position, target.position) < goToPlayerDistance;
+        interactPlayer = Vector3.Distance(transform.position, target.position) < goToPlayerDistance;
 
         //If the distance between target and animal is in range, then walk toward the player
         if (interactPlayer)
@@ -69,7 +76,6 @@ public class AnimalAnimationController : MonoBehaviour
         {
             Patrol();
         }
-
     }
 
     /// <summary>
@@ -81,7 +87,7 @@ public class AnimalAnimationController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, goToPlayerDistance);
     }
 
-    public void Patrol()
+    private void Patrol()
     {
         transform.position = Vector3.MoveTowards(transform.position, patrolSpots[randomSpot].position,
             moveSpeed * Time.deltaTime);

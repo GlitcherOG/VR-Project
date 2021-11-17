@@ -39,10 +39,11 @@ public class Options : MonoBehaviour
     }
 
     //Function to mute volume when toggle is active
-    public void ToggleMute(bool isMuted)
+    public void ToggleMute()
     {
+        muteToggle.isOn = !muteToggle.isOn;
         //string reference isMuted connects to the AudioMixer master group Volume and isMuted parameters in Unity
-        if (isMuted)
+        if (muteToggle.isOn)
         {
             //-40 is the minimum volume
             masterAudio.SetFloat("isMutedVolume", -40);
@@ -52,6 +53,11 @@ public class Options : MonoBehaviour
             //0 is the maximum volume
             masterAudio.SetFloat("isMutedVolume", 0);
         }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
     #endregion
 

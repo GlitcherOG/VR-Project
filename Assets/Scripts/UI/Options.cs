@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -12,8 +11,6 @@ public class Options : MonoBehaviour
     public Slider musicSlider;
     public Slider SFXSlider;
     #endregion
-
-   
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +43,7 @@ public class Options : MonoBehaviour
         if (muteToggle.isOn)
         {
             //-40 is the minimum volume
-            masterAudio.SetFloat("isMutedVolume", -40);
+            masterAudio.SetFloat("isMutedVolume", -80);
         }
         else
         {

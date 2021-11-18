@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -17,7 +18,7 @@ public class Options : MonoBehaviour
     {
         LoadPlayerPrefs();
     }
-    
+
     #region Change Settings
     public void ChangeScene(int sceneIndex)
     {
@@ -42,7 +43,7 @@ public class Options : MonoBehaviour
         //string reference isMuted connects to the AudioMixer master group Volume and isMuted parameters in Unity
         if (muteToggle.isOn)
         {
-            //-40 is the minimum volume
+            //-80 is the minimum volume
             masterAudio.SetFloat("isMutedVolume", -80);
         }
         else

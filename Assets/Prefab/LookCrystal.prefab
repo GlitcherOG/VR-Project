@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8752869601521082896}
   - component: {fileID: 8752869601521082910}
   - component: {fileID: 4863283555583381485}
+  - component: {fileID: 6069667036743984006}
   m_Layer: 0
   m_Name: LookCrystal
   m_TagString: Untagged
@@ -65,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 617f7152c60f0f24d9ca66539ec43d1b, type: 3}
+  - {fileID: 2100000, guid: ee0eda08063cefd40a3c198e95eaf5d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -174,6 +175,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.8
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6069667036743984006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482839232550689915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414dfd48b57a7f346a9a7ec08b0b06e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayColor: {r: 0.5058824, g: 0, b: 0.50980395, a: 0}
+  nightColor: {r: 0.09803922, g: 1, b: 0.89411765, a: 0}
 --- !u!1 &8752869602303577079
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,33 +4,26 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-    public bool isGamePaused;
-    public GameObject pauseMenu;
+  public bool isGamePaused;
+  public GameObject pauseMenu;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (isGamePaused)
-        {
-            Resume();
-        }
-        else
-        {
-            Pause();
-        }
-    }
+  private void Awake()
+  {
+    pauseMenu = gameObject;
+    gameObject.SetActive(false);
+  }
 
-    public void Resume()
-    {
-        pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
-        isGamePaused = false;
-    }
+  public void Resume()
+  {
+    pauseMenu.SetActive(false);
+    Time.timeScale = 1f;
+    isGamePaused = false;
+  }
 
-    public void Pause()
-    {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
-        isGamePaused = true;
-    }
+  public void Pause()
+  {
+    pauseMenu.SetActive(true);
+    Time.timeScale = 0f;
+    isGamePaused = true;
+  }
 }

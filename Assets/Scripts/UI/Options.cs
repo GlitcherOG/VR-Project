@@ -30,12 +30,27 @@ public class Options : MonoBehaviour
     {
         masterAudio.SetFloat("MusicVol", MusicVol);
     }
+
+    public void AddMusicVolume(float MusicVol)
+    {
+        float Temp;
+        masterAudio.GetFloat("MusicVol", out Temp);
+        Temp += MusicVol;
+        masterAudio.SetFloat("MusicVol", Temp);
+    }
     //This changes sound effects volume 
     public void SetSFXVolume(float SFXVol)
     {
         masterAudio.SetFloat("SFXVol", SFXVol);
     }
 
+    public void AddSFXVolume(float SFXVol)
+    {
+        float Temp;
+        masterAudio.GetFloat("SFXVol", out Temp);
+        Temp += SFXVol;
+        masterAudio.SetFloat("SFXVol", Temp);
+    }
     //Function to mute volume when toggle is active
     public void ToggleMute()
     {

@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class InteractionManager : MonoBehaviour
 {
     public bool Active = true;
+    public bool resetable = true;
     public float Maxseconds = 3;
     public float count;
     private bool hit;
@@ -23,7 +24,10 @@ public class InteractionManager : MonoBehaviour
             if (count >= Maxseconds)
             {
                 Events.Invoke();
-                reached = true;
+                if (!resetable)
+                {
+                    reached = true;
+                }
             }
         }
         else if (count < Maxseconds)

@@ -7,12 +7,13 @@ using UnityEngine.UI;
 public class RadialMenuController : MonoBehaviour
 {
     private List<Button> childButtons = new List<Button>();
-    private bool isOpen; //Tracks if radial menu is open or not
+    public bool isOpen; //Tracks if radial menu is open or not
     [SerializeField] private float buttonDistance; //Distance between parent radial button and children buttons
 
     // Start is called before the first frame update
     void Start()
     {
+        OpenMenu();
         //Get all the child button components
         childButtons = GetComponentsInChildren<Button>(true)
             .Where(x => x.gameObject.transform.parent != transform.parent).ToList();
@@ -28,7 +29,7 @@ public class RadialMenuController : MonoBehaviour
 
     public void OpenMenu()
     {
-        isOpen = !isOpen;
+        //isOpen = !isOpen;
         //Calculate gaps between the child buttons in the radial menu
         float angle = (90 / childButtons.Count - 1) * Mathf.Deg2Rad;
         

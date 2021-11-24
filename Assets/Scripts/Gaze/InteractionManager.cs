@@ -23,6 +23,7 @@ public class InteractionManager : MonoBehaviour
         {
             if (count >= Maxseconds)
             {
+                count = 0;
                 Events.Invoke();
                 if (!resetable)
                 {

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water
-  m_Shader: {fileID: 4800000, guid: d5e331906b53bcf4aa3dcb3c9fab0924, type: 3}
+  m_Shader: {fileID: 4800000, guid: 16c0d01e3bac1464881f82af01411593, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -29,7 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MidLayer:
         m_Texture: {fileID: 2800000, guid: f80c573281d2d7b429c7b6724fda690a, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 100, y: 100}
         m_Offset: {x: 0, y: 0}
     - _Texture0:
         m_Texture: {fileID: 2800000, guid: c6cff7c20cd33a648b7386aa00ed4da4, type: 3}
@@ -75,8 +75,11 @@ Material:
     - _Depth: 2.99
     - _FoamIntensity: 0.365
     - _IntersectIntensity: 0.638
+    - _MidLayerSpeed: 0.1
     - _ShieldPatternPower: 1
     - _ShieldRimPower: 7.323343
+    - _TopLayerSpeed: 0.1
+    - _TopUnderLayerSpeed: 0.1
     - __dirty: 0
     m_Colors:
     - _BGColour: {r: 0.05882353, g: 0.49411765, b: 0.48235294, a: 0}

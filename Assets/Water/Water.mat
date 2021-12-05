@@ -72,8 +72,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Depth: 2.99
-    - _FoamIntensity: 0.365
+    - _Depth: 4.45
+    - _FoamIntensity: 1
     - _IntersectIntensity: 0.638
     - _MidLayerSpeed: 0.1
     - _ShieldPatternPower: 1

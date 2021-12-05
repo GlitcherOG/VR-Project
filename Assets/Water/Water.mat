@@ -75,11 +75,11 @@ Material:
     - _Depth: 4.45
     - _FoamIntensity: 1
     - _IntersectIntensity: 0.638
-    - _MidLayerSpeed: 0.1
+    - _MidLayerSpeed: 0.005
     - _ShieldPatternPower: 1
     - _ShieldRimPower: 7.323343
-    - _TopLayerSpeed: 0.1
-    - _TopUnderLayerSpeed: 0.1
+    - _TopLayerSpeed: 0.005
+    - _TopUnderLayerSpeed: 0.005
     - __dirty: 0
     m_Colors:
     - _BGColour: {r: 0.05882353, g: 0.49411765, b: 0.48235294, a: 0}
@@ -88,7 +88,7 @@ Material:
     - _Color1: {r: 0.05882353, g: 0.49411765, b: 0.48235294, a: 0}
     - _Color2: {r: 0, g: 0.16981131, b: 0.164289, a: 0}
     - _DeepWaterColour: {r: 0, g: 0.059564363, b: 0.064, a: 1}
-    - _FoamColour: {r: 0.108668566, g: 0.6226415, b: 0.60738766, a: 1}
+    - _FoamColour: {r: 0.5722232, g: 0.7264151, b: 0.721707, a: 1}
     - _IntersectColor: {r: 0.108668566, g: 0.6226415, b: 0.60738766, a: 1}
     - _MidlayerTint: {r: 0, g: 0.2735849, b: 0.26722246, a: 0}
   m_BuildTextureStacks: []

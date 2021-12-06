@@ -13,6 +13,7 @@ public class InteractionManager : MonoBehaviour
     public UnityEvent Events;
 
     bool reached;
+    bool cooldown;
 
     // Update is called once per frame
     void Update()
@@ -24,6 +25,7 @@ public class InteractionManager : MonoBehaviour
             if (count >= Maxseconds)
             {
                 count = 0;
+                cooldown = true;
                 Events.Invoke();
                 if (!resetable)
                 {
@@ -36,17 +38,24 @@ public class InteractionManager : MonoBehaviour
             reached = false;
         }
 
-        if (hit && count <= Maxseconds)
+        if (!cooldown)
         {
-            count += Time.deltaTime;
+            if (hit && count <= Maxseconds)
+            {
+                count += Time.deltaTime;
 
-        }
-        else if (!hit && count > 0)
-        {
-            count -= Time.deltaTime;
+            }
+            else if (!hit && count > 0)
+            {
+                count -= Time.deltaTime;
+            }
         }
     }
 
     public void HitActive() => hit = true;
-    public void HitDisabled() => hit = false;
+    public void HitDisabled()
+    {
+        hit = false;
+        cooldown = false;
+    }
 }

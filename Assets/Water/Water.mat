@@ -75,11 +75,11 @@ Material:
     - _Depth: 4.45
     - _FoamIntensity: 1
     - _IntersectIntensity: 0.638
-    - _MidLayerSpeed: 0.005
+    - _MidLayerSpeed: 0.01
     - _ShieldPatternPower: 1
     - _ShieldRimPower: 7.323343
-    - _TopLayerSpeed: 0.005
-    - _TopUnderLayerSpeed: 0.005
+    - _TopLayerSpeed: 0.01
+    - _TopUnderLayerSpeed: 0.01
     - __dirty: 0
     m_Colors:
     - _BGColour: {r: 0.05882353, g: 0.49411765, b: 0.48235294, a: 0}

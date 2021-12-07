@@ -12,6 +12,7 @@ public class GazeTeleport : MonoBehaviour
   public bool isEnabled = true;
   public MeshCollider col;
   public MeshRenderer rend;
+  public GameObject part; // Gaze Particle Renderer
 
   public Image fade;
 
@@ -25,26 +26,7 @@ public class GazeTeleport : MonoBehaviour
 
   public void Update()
   {
-    //if (teleporting)
-    //{
-    //  t += Time.deltaTime;
-    //  fade.color = Color.Lerp(alpha, Color.black, t / 4);
-    //  if (Color.black == fade.color)
-    //  {
-    //    teleporting = false;
-    //    TeleportToPoint();
-    //  }
-    //}
-    //else
-    //{
-    //  float t = 0;
 
-    //  if (alpha != fade.color)
-    //  {
-    //    t += Time.deltaTime;
-    //    fade.color = Color.Lerp(Color.black, alpha, t / 4);
-    //  }
-    //}
   }
 
   private void Awake()
@@ -102,6 +84,7 @@ public class GazeTeleport : MonoBehaviour
 
     col.enabled = _state;
     rend.enabled = _state;
+    part?.SetActive(_state);
   }
 
 }

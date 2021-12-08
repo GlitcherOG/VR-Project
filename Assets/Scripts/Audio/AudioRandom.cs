@@ -9,13 +9,14 @@ public class AudioRandom : MonoBehaviour
     void Start()
     {
         source = GetComponent<AudioSource>();
+        StartCoroutine("PlayAudio");
     }
 
     IEnumerator PlayAudio()
     {
-        float temp = Random.Range(10,30);
-
+        float temp = Random.Range(5,30);
         yield return new WaitForSeconds(temp);
         source.Play();
+        StartCoroutine("PlayAudio");
     }
 }

@@ -28,27 +28,27 @@ public class Options : MonoBehaviour
     //This changes volume in options
     public void SetMusicVolume(float MusicVol)
     {
-        masterAudio.SetFloat("MusicVol", MusicVol);
+        masterAudio.SetFloat("MusicVol", BT.BaneSound.LinearToLogAudio(MusicVol));
     }
 
     public void AddMusicVolume(float MusicVol)
     {
         float Temp;
         masterAudio.GetFloat("MusicVol", out Temp);
-        Temp += MusicVol;
+        Temp += BT.BaneSound.LinearToLogAudio(MusicVol);
         masterAudio.SetFloat("MusicVol", Temp);
     }
     //This changes sound effects volume 
     public void SetSFXVolume(float SFXVol)
     {
-        masterAudio.SetFloat("SFXVol", SFXVol);
+        masterAudio.SetFloat("SFXVol", BT.BaneSound.LinearToLogAudio(SFXVol));
     }
 
     public void AddSFXVolume(float SFXVol)
     {
         float Temp;
         masterAudio.GetFloat("SFXVol", out Temp);
-        Temp += SFXVol;
+        Temp += BT.BaneSound.LinearToLogAudio(SFXVol);
         masterAudio.SetFloat("SFXVol", Temp);
     }
     //Function to mute volume when toggle is active

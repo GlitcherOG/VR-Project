@@ -38,7 +38,6 @@ public class CameraDot : MonoBehaviour
         {
             slider.enabled = true;
             timer += Time.deltaTime;
-            print((timer / triggerTime));
             slider.fillAmount = (timer / triggerTime);
         }
         else if(isTriggered && !triggered)

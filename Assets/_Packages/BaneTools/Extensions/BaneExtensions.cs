@@ -121,10 +121,12 @@ namespace BT
     /// </summary>
     /// <param name="_array"></param>
     /// <returns></returns>
-    public static int[] Vector3ToIntArray(Vector3[] _array) {
+    public static int[] Vector3ToIntArray(Vector3[] _array)
+    {
       List<int> output = new List<int>();
 
-      for (int i = 0; i < _array.Length; i++) {
+      for (int i = 0; i < _array.Length; i++)
+      {
         output.Add((int)_array[i].x);
         output.Add((int)_array[i].y);
         output.Add((int)_array[i].z);
@@ -138,10 +140,12 @@ namespace BT
     /// </summary>
     /// <param name="_array"></param>
     /// <returns></returns>
-    public static float[] Vector3ToFloatArray(Vector3[] _array) {
+    public static float[] Vector3ToFloatArray(Vector3[] _array)
+    {
       List<float> output = new List<float>();
 
-      for (int i = 0; i < _array.Length; i++) {
+      for (int i = 0; i < _array.Length; i++)
+      {
         output.Add(_array[i].x);
         output.Add(_array[i].y);
         output.Add(_array[i].z);
@@ -311,9 +315,10 @@ namespace BT
     /// </summary>
     /// <param name="_points"></param>
     /// <returns></returns>
-    public static Vector3 AverageMidPoint(this Vector3[] _points) {
+    public static Vector3 AverageMidPoint(this Vector3[] _points)
+    {
       var total = Vector3.zero;
-      foreach (var point in _points) 
+      foreach (var point in _points)
         total += point;
 
       return total / _points.Length;
@@ -323,7 +328,8 @@ namespace BT
     /// </summary>
     /// <param name="_points"></param>
     /// <returns></returns>
-    public static Vector3 AverageMidPoint(this Transform[] _points) {
+    public static Vector3 AverageMidPoint(this Transform[] _points)
+    {
       var total = Vector3.zero;
       foreach (var point in _points)
         total += point.position;
@@ -774,6 +780,27 @@ namespace BT
     }
   }
 
+  public static class BaneSound
+  {
+    /// <summary>
+    /// Converts a float from a linear (0-1) value to a logarithmmic value for use with audio mixers.
+    /// </summary>
+    /// <param name="_vol"></param>
+    /// <returns></returns>
+    public static float LinearToLogAudio(float _vol)
+    {
+      var dbVolume = Mathf.Log10(_vol) * 20;
+      if (_vol == 0.0f)
+        dbVolume = -80.0f;
+
+      return dbVolume;
+    }
+
+    public static float LogAudioToLinear(float _vol)
+    {
+      return Mathf.Pow(10.0f, _vol / 20.0f);
+    }
+  }
   public enum Direction
   {
     Forward = 0,
